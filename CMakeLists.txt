@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( kMeans_copy )
+set(OpenCV_DIR /home/pradeep/Desktop/opencv_buildd/opencv)
+find_package( OpenCV REQUIRED )
+add_executable( color_contrast main.cpp)
+target_link_libraries( color_contrast ${OpenCV_LIBS} )
